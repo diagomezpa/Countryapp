@@ -14,7 +14,12 @@ const routes: Routes = [
     component: AboutPageComponent,
   },
   {
-    path: 'contact',
+    path: 'countries',
+    loadChildren: () =>
+      import('./countries/countries.module').then((m) => m.CountriesModule),
+  },
+  {
+    path: 'countries',
     component: ContactPageComponent,
   },
   {
