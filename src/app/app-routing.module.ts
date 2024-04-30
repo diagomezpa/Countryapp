@@ -19,7 +19,7 @@ const routes: Routes = [
       import('./countries/countries.module').then((m) => m.CountriesModule),
   },
   {
-    path: 'countries',
+    path: 'contact',
     component: ContactPageComponent,
   },
   {
