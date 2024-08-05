@@ -4,6 +4,7 @@ import { ByCapitalPageComponent } from './pages/by-capital-page/by-capital-page.
 import { BycountryPageComponent } from './pages/bycountry-page/bycountry-page.component';
 import { ByRegionPageComponent } from './pages/by-region-page/by-region-page.component';
 import { CountryPageComponent } from './pages/country-page/country-page.component';
+import { AllContriesComponent } from './pages/all-contries/all-contries.component'; // Import the AllContriesComponent
 
 const routes: Routes = [
   { path: 'by-capital', component: ByCapitalPageComponent },
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'by/:id',
     component: CountryPageComponent,
+  },
+  {
+    path: 'all',
+    component: AllContriesComponent,
   },
   {
     path: '**',

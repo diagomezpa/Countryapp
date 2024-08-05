@@ -7,6 +7,7 @@ import { BycountryPageComponent } from './pages/bycountry-page/bycountry-page.co
 import { CountriesRoutingModule } from './countries-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { CountryTableComponent } from './components/country-table/country-table.component';
+import { AllContriesComponent } from './pages/all-contries/all-contries.component'; // Import the AllContriesComponent
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { CountryTableComponent } from './components/country-table/country-table.
     CountryPageComponent,
     BycountryPageComponent,
     CountryTableComponent,
+    AllContriesComponent, // Declare the AllContriesComponent
   ],
   imports: [CommonModule, CountriesRoutingModule, SharedModule],
 })

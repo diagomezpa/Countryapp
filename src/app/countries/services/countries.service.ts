@@ -67,4 +67,9 @@ export class CountriesService {
       tap(() => this.saveToLocalStorage())
     );
   }
+
+  getAllCountries(): Observable<Country[]> {
+    const url = `${this.apiUrl}/all`;
+    return this.http.get<Country[]>(`${this.apiUrl}/all`).pipe();
+  }
 }
